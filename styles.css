@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Caveat:wght@400..700&family=Grape+Nuts&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oregano:ital@0;1&family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap'); /*code*/
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Nanum+Gothic+Coding&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Nanum+Gothic+Coding&family=Orbitron:wght@400..900&family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');/*old*/
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Dekko&family=Nanum+Gothic+Coding&family=Orbitron:wght@400..900&family=Patrick+Hand&display=swap');
+
+/*Color Palette */
+* {
+    --background-color:rgb(249, 212, 244);
+    --font-color:rgb(87, 25, 72);
+    --second-color: #fffb80;
+    --title-color: white;
+    --lightblue: #b9cff6;
+    --link-color: #f6fca8;
+    --border-color: #ffff00;
+
+    /* Spacing units */
+    --small-space: 2px;
+    --regular-space: 8px;
+    --large-space: 32px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+  
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    font-family: "Dekko", cursive;
+    font-style: normal;
+    color: var(--font-color);
+    font-size: 2rem; 
+}
+
+
+.title{
+    position: absolute;
+    font-family:  "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    color: var(--title-color);
+    left: 20%;
+    top: 25%;
+    font-size: 4rem;
+    margin: 5% auto;
+}
+
+.section {
+    position: relative; /* allows makes each container relative so make th other components relative to them */
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0; /* set the marging to zero again section */
+    padding: 0; 
+    flex-wrap: wrap; 
+    justify-content: space-around; /* Evenly spaces the child elements */
+    padding-bottom: 50px; /* Add padding to push footer down */
+
+}
+
+
+
+.section-title {
+    position: absolute;
+    top: 0%; /* Adjust the height */
+    background: transparent; 
+    color: var(--second-color);
+    font-family: "Nanum Gothic Coding", monospace; 
+}
+
+.home-text {
+    position: absolute ;
+    top: 45%; /* Adjust the position to top of the page */
+    left: 30%;
+    z-index: 6; /* bove other content */
+    padding: 0; /* No padding around the text */
+    font-size: 1.5rem;
+    color: var(--second-color);
+    font-family: "Nanum Gothic Coding", monospace; 
+}
+
+
+.home-image {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    width: 250px; 
+    max-height: 250px; 
+    border-radius: 50%; /* circle */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  
+}
+
+.contact {
+    position: absolute;
+    bottom: 0%;
+    left:2%;
+    font-size: 1.5rem;
+    font-family: "Nanum Gothic Coding", monospace; 
+}
+
+
+
+/* Buttons */
+button {
+    padding: var(--small-space) var(--small-space);
+    box-shadow: inset 0 -100px 0 0  var(--lightblue);
+    color: var(--lightblue);
+    transition: background-color 0.3s ease;
+    border-color: transparent; 
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    letter-spacing: 1px;
+    border: 2px solid var(--lightblue); 
+    z-index: 1;   
+
+}
+/*souce */
+
+button:hover {
+    /* color: white; */
+    background: transparent;
+    transform: scale(0.9)
+    
+}
+  
+button:active {
+transform: scale(0.9);
+}
+
+button:disabled {
+    cursor: not-allowed;
+    padding: var(--small-space) var(--small-space);
+    background-color: var(--lightpink);
+    color: var(--background-color);
+    transition: background-color 0.3s ease;
+    border-color: transparent;
+}
+
+
+/* Links */
+a {
+    text-decoration: none; /* No underline */
+    color: var(--font-color) ;
+}
+
+a:hover {
+    color: var(--link-color);
+}
+
+a:visited {
+    background: transparent;
+} 
+
+
+.nav-bar {
+    position: absolute;
+    list-style-type: none; /* Remove the list attribute*/
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    flex-direction: row;
+    left: 0;
+    top: 0%; /* position it at the top of the section*/
+    width: 100%;
+    height: 60px;
+    background: transparent; /* This is the pink color from the title and quote */
+    z-index: 10;
+}
+  
+
+
+.nav-bar li {
+    margin: 70px; /*space between navigation titles */
+    background: transparent ;  /* no background color */
+    z-index: 10;
+    
+}
+
+.nav-bar a {
+    color: var(--title-color);
+    
+}
+
+
+
+
+.social-media-bar {
+    position: absolute;
+    background: transparent; 
+    width: 40px;  
+    height: 100%;
+    top: 0%;
+    right: 0%;
+    display: flex; 
+    flex-direction: column;
+    margin: 10px;
+    z-index: 10;
+  }
+
+ 
+  .about-boxes-container {
+    position: absolute; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto; /* Centers the container */
+    padding: 20px;
+    top: 15%;
+    align-items: center;
+}
+
+
+  .description-box, .languages-box, .experience-box {
+    padding: 20px; /* Provide some space for content */
+    background-color: #fff; /* Or any desired color */
+    border-radius: 20%; 
+    padding: 40px;
+    box-sizing: border-box;
+    /* height:250px;
+    width: 250px; */
+    max-width: 400px;
+    transition: ease-out 0.5s;
+
+}
+
+.description-box:hover, .languages-box:hover, .experience-box:hover {
+    transform: scale(0.95)
+    
+}
+
+.languages-box {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); Creates a flexible number of columns */
+ 
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    
+    gap: 10px; 
+    padding: 20px; 
+    list-style-type: none; /* Removes bullet points */
+}
+
+
+
+.languages-title {
+    grid-column: 1 / -1; /* Span all columns */
+    text-align: center;
+}
+
+.languages-box li {
+    border: transparent; 
+    text-align: center; 
+    border-radius: 10px;
+    font-size: 0.8rem;
+    z-index: 2;
+    color: var(--font-color);
+}
+
+.experience-box{
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+.experience-box .box-title {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+.experience-box h2 {
+
+    margin-bottom: 10px; /* Adjust the value as needed */
+}
+
+.experience-box p {
+    margin-bottom: 20px; 
+    margin-top: 10px; 
+}
+
+.box-title{
+    font-size: 2rem;
+}
+
+.despcription{
+    font-size: 1.3rem;
+    text-align: justify;
+
+}
+
+
+.project-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust based on your spacing preference */
+    max-width: 1000px;
+    top: 5%;
+    
+}
+
+
+.project-item {
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 500px; /* Adjust based on your preference */
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-image {
+    width: 300px; /* Example fixed width, or use a percentage like 50% */
+    height: auto; /* Keeps the aspect ratio intact */
+    border-radius: 5px; /* Slightly rounded corners for the image */
+    margin-bottom: 10px;
+    display: block; /* Ensures the image is a block-level element to center it */
+    margin-left: auto; /* With display:block, auto margins center the image */
+    margin-right: auto;
+}
+
+.project-title {
+    color: var(--font-color);
+    margin-bottom: 10px; 
+    text-align: center; 
+    font-size: 2rem; 
+}
+
+.project-description {
+    color: var(--font-color); /* Ensures text color consistency */
+    text-align: center;
+    font-size: 1.3rem;
+}
+#Projects {
+    height: 200vh; 
+    padding-bottom: 50px; /* Provides space between Projects section and footer */
+}
+
+.linkP{
+    font-size: 1.3rem !important;
+    color: var(--lightblue);
+}
+
+.linkP:hover{
+    font-size: 1.3rem !important;
+    color: var(--second-color);
+}
+
+
+#footer.social {
+    text-align: center; 
+    position: relative; /* Positioning at the bottom */
+    background: var(--background);
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0; /* padding to the top and bottom of the footer */
+}
+
+/* Set the color for links in the footer */
+#footer.social a {
+    color: var(--background);
+    text-decoration: none; /* Removes underline */
+}
+
+
+.social a:visited {
+    color: transparent;
+    text-decoration: none; /* no underline */
+    outline: none; /* no outline */
+}
+
+/* Individual social icons */
+.social-icon {
+    width: 30px; 
+    height: 30px;  
+    margin: 20px;  
+    vertical-align: middle; 
+    display: inline-block; 
+    margin: 5px; 
+
+}
+
+
+@keyframes typing {
+    from {
+      max-width: 0;
+    }
+    to {
+      max-width: 100%;
+    }
+  }
+  
+
+.title {
+   
+    overflow: hidden;
+    white-space: nowrap; 
+    animation: typing 3.5s steps(40, end); /* Add forwards to ensure it stays at 100% width after completing */
+
+}
+
+.home-text{
+    overflow: hidden;
+    white-space: nowrap; /* Keeps the text on a single line */
+    animation: typing 3.5s steps(40, end); 
+    margin: 0 auto;
+    word-wrap: break-word; /* Ensures long words don't cause overflow */
+    hyphens: auto; 
+    max-width: 100%;
+    word-break: break-all;
+   
+}
+
+footer h1{
+    font-family: "Nanum Gothic Coding", monospace; 
+    font-size: 2rem;
+}
+  
+
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+    .section{
+        align-items: center; 
+        justify-content: center; /* Center children vertically if flex-direction is column */
+        text-align: center;
+    }
+    .home-text {
+        font-size: calc(0.4rem + 2vw); 
+    }
+    .title {
+    
+        font-size: calc(1rem + 2vw);  
+        animation-fill-mode: forwards;
+    }
+
+    .project-item{
+        width: 300px;
+    }
+    .home-image{
+        width: 250px; 
+        max-height: 250px; 
+
+    }
+
+    body{
+        font-size: 0.8rem;
+    }
+
+    .nav-bar li {
+        margin: 10px; 
+    }
+    
+    .social-media-bar {
+        width: 30px; /* Smaller social bar for phones */
+    }
+
+    .about-boxes-container {
+        flex-direction: column;
+        flex-wrap: wrap;   
+        margin: 10px; /* Centers the container */
+        top: 5px;
+        justify-content: center;
+        gap: 20px;
+     
+    }
+
+  
+    .description-box, .languages-box, .experience-box {
+       height:300px;
+       width: 300px;
+    
+    }
+    
+    .project-image {
+        max-width: 100px; /* Example fixed width, or use a percentage like 50% */
+        height: auto; /* Keeps the aspect ratio intact */
+    }
+
+    .languages-box{
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+
+    .languages-box li {
+        font-size: 0.8rem;  
+    }
+    .experience-box {
+        height:380px;
+        font-size: 0.6rem;
+        padding: 30px;
+    }
+
+    .box-title{
+        font-size: 0.8rem;
+    }
+    
+    #About {
+        height: 180vh;   
+    }
+    #Projects {
+        height: 150vh;   
+    }
+
+    .despcription{
+        font-size: 0.8rem;
+    
+    }
+    
+    .project-title {
+        font-size: 0.9rem; /* Adjust the font size as needed */
+    }
+    
+    .project-description {
+        font-size: 0.7rem;
+    }
+
+    
+    .linkP{
+        font-size: 0.8rem !important;
+    }
+ 
+   
+}
+
+@media (max-width: 500px) {
+
+    .section{
+        align-items: center; 
+        justify-content: center; 
+        text-align: center;
+    }
+    .home-text {
+        display: none;
+    }
+    .title {
+    
+        font-size: calc(1rem + 2vw);  
+        animation-fill-mode: forwards;
+    }
+
+    .project-item{
+        width: 150px;
+    }
+    .home-image{
+        width: 170px; 
+        max-height: 170px; 
+
+    }
+
+    body{
+        font-size: 0.8rem;
+    }
+
+    .nav-bar li {
+        margin: 10px; 
+    }
+    
+    .social-media-bar {
+        width: 30px; 
+    }
+
+    .about-boxes-container {
+        flex-direction: column;
+        flex-wrap: wrap;   
+        margin: 10px;
+        top: 5px;
+        justify-content: center;
+        gap: 20px;
+     
+    }
+
+  
+    .description-box, .languages-box, .experience-box {
+       height:200px;
+       width: 200px;
+    
+    }
+    
+    .project-image {
+        max-width: 100px; /* Example fixed width, or use a percentage like 50% */
+        height: auto; /* Keeps the aspect ratio intact */
+    }
+
+    .languages-box{
+        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    }
+
+    .languages-box li {
+        font-size: 0.5rem;  
+    }
+    .experience-box {
+        height:300px;
+        font-size: 0.4rem;
+        padding: 20px;
+    }
+
+    .experience-box {
+        padding: 20px;
+    }
+    .box-title{
+        font-size: 0.7rem;
+    }
+    
+    #Projects {
+        height: 100vh; 
+       
+    }
+
+    .despcription{
+        font-size: 0.5rem;
+    
+    }
+    
+    .project-title {
+        font-size: 0.6rem; /* Adjust the font size as needed */
+    }
+    
+    .project-description {
+        font-size: 0.4rem;
+    }
+
+    
+    .linkP{
+        font-size: 0.5rem !important;
+    }
+ 
+   
+}
+
+
+
+
+
+  
