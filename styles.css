@@ -47,7 +47,7 @@ body {
 }
 
 .section {
-    position: relative; /* allows makes each container relative so make th other components relative to them */
+    position: relative; 
     height: 100vh; 
     display: flex;
     align-items: center;
@@ -55,9 +55,9 @@ body {
     margin: 0; /* set the marging to zero again section */
     padding:0 1rem; 
     flex-wrap: wrap; 
-    justify-content: space-around; /* Evenly spaces the child elements */
-    padding-bottom: 50px; /* Add padding to push footer down */
-    overflow-x: hidden; /* Prevents horizontal overflow */
+    justify-content: space-around; 
+    padding-bottom: 50px; 
+    overflow-x: hidden; 
 }
 
 
@@ -74,10 +74,10 @@ body {
 
 .home-text {
     position: absolute ;
-    top: 45%; /* Adjust the position to top of the page */
+    top: 45%; 
     left: 30%;
     z-index: 6; /* bove other content */
-    padding: 0; /* No padding around the text */
+    padding: 0; 
     font-size: 1.5rem;
     color: var(--second-color);
     font-family: "Nanum Gothic Coding", monospace; 
@@ -124,7 +124,7 @@ button {
     z-index: 1;   
 
 }
-/*souce */
+
 
 button:hover {
     /* color: white; */
@@ -149,7 +149,7 @@ button:disabled {
 
 /* Links */
 a {
-    text-decoration: none; /* No underline */
+    text-decoration: none; /* no underline */
     color: var(--font-color) ;
 }
 
@@ -173,7 +173,7 @@ a:visited {
     top: 0%; /* position it at the top of the section*/
     width: 100%;
     height: 60px;
-    background: transparent; /* This is the pink color from the title and quote */
+    background: transparent; 
     z-index: 10;
 }
   
@@ -224,13 +224,11 @@ a:visited {
 
 
   .description-box, .languages-box, .experience-box {
-    padding: 20px; /* Provide some space for content */
-    background-color: #fff; /* Or any desired color */
+    padding: 20px; 
+    background-color: #fff; 
     border-radius: 20%; 
     padding: 40px;
     box-sizing: border-box;
-    /* height:250px;
-    width: 250px; */
     max-width: 400px;
     transition: ease-out 0.5s;
 
@@ -243,13 +241,10 @@ a:visited {
 
 .languages-box {
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); Creates a flexible number of columns */
- 
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    
     gap: 10px; 
     padding: 20px; 
-    list-style-type: none; /* Removes bullet points */
+    list-style-type: none; 
 }
 
 
@@ -274,12 +269,12 @@ a:visited {
 }
 
 .experience-box .box-title {
-    margin-bottom: 20px; /* Adjust the value as needed */
+    margin-bottom: 20px; 
 }
 
 .experience-box h2 {
 
-    margin-bottom: 10px; /* Adjust the value as needed */
+    margin-bottom: 10px; 
 }
 
 .experience-box p {
@@ -304,7 +299,7 @@ a:visited {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Adjust based on your spacing preference */
+    gap: 20px; 
     max-width: 1000px;
     top: 5%;
     
@@ -314,8 +309,8 @@ a:visited {
 .project-item {
     background-color: #fff; /* White background */
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    width: 500px; /* Adjust based on your preference */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 500px; 
     padding: 15px;
     box-sizing: border-box;
     display: flex;
@@ -324,12 +319,12 @@ a:visited {
 }
 
 .project-image {
-    width: 300px; /* Example fixed width, or use a percentage like 50% */
-    height: auto; /* Keeps the aspect ratio intact */
-    border-radius: 5px; /* Slightly rounded corners for the image */
+    width: 300px; 
+    height: auto; 
+    border-radius: 5px; 
     margin-bottom: 10px;
-    display: block; /* Ensures the image is a block-level element to center it */
-    margin-left: auto; /* With display:block, auto margins center the image */
+    display: block; 
+    margin-left: auto; 
     margin-right: auto;
 }
 
@@ -341,13 +336,13 @@ a:visited {
 }
 
 .project-description {
-    color: var(--font-color); /* Ensures text color consistency */
+    color: var(--font-color); 
     text-align: center;
     font-size: 1.3rem;
 }
 #Projects {
     height: 230vh; 
-    padding-bottom: 50px; /* Provides space between Projects section and footer */
+    padding-bottom: 50px; 
 }
 
 .linkP{
@@ -363,27 +358,26 @@ a:visited {
 
 #footer.social {
     text-align: center; 
-    position: relative; /* Positioning at the bottom */
+    position: relative; 
     background: var(--background);
     width: 100%;
     text-align: center;
-    padding: 1rem 0; /* padding to the top and bottom of the footer */
+    padding: 1rem 0; 
 }
 
-/* Set the color for links in the footer */
+
 #footer.social a {
     color: var(--background);
-    text-decoration: none; /* Removes underline */
+    text-decoration: none;
 }
 
 
 .social a:visited {
     color: transparent;
-    text-decoration: none; /* no underline */
-    outline: none; /* no outline */
+    text-decoration: none; 
+    outline: none; 
 }
 
-/* Individual social icons */
 .social-icon {
     width: 30px; 
     height: 30px;  
@@ -437,7 +431,7 @@ html {
 @media (max-width: 1200px) {
     .section{
         align-items: center; 
-        justify-content: center;
+        justify-content: center; 
         text-align: center;
     }
     .home-text {
@@ -468,13 +462,13 @@ html {
     }
     
     .social-media-bar {
-        width: 30px; 
+        width: 30px; /* Smaller social bar for phones */
     }
 
     .about-boxes-container {
         flex-direction: column;
         flex-wrap: wrap;   
-        margin: 10px; 
+        margin: 10px; /* Centers the container */
         top: 5px;
         justify-content: center;
         gap: 20px;
@@ -652,6 +646,7 @@ html {
  
    
 }
+
 
 
 
