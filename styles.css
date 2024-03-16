@@ -409,21 +409,19 @@ a:visited {
    
     overflow: hidden;
     white-space: nowrap; 
-    animation: typing 3.5s steps(40, end); /* Add forwards to ensure it stays at 100% width after completing */
+    animation: typing 3.5s steps(40, end); 
 
 }
 
 .home-text{
     overflow: hidden;
-    white-space: nowrap; /* Keeps the text on a single line */
+    white-space: nowrap; 
     animation: typing 3.5s steps(40, end); 
     margin: 0 auto;
-    word-wrap: break-word; /* Ensures long words don't cause overflow */
+    word-wrap: break-word; 
     hyphens: auto; 
     word-break: break-all;
-    font-size: calc(0.3rem + 2vw); /* Adjust as needed */
-
-   
+    font-size: calc(0.3rem + 2vw);
 }
 
 footer h1{
@@ -439,7 +437,7 @@ html {
 @media (max-width: 1200px) {
     .section{
         align-items: center; 
-        justify-content: center; /* Center children vertically if flex-direction is column */
+        justify-content: center;
         text-align: center;
     }
     .home-text {
@@ -470,13 +468,13 @@ html {
     }
     
     .social-media-bar {
-        width: 30px; /* Smaller social bar for phones */
+        width: 30px; 
     }
 
     .about-boxes-container {
         flex-direction: column;
         flex-wrap: wrap;   
-        margin: 10px; /* Centers the container */
+        margin: 10px; 
         top: 5px;
         justify-content: center;
         gap: 20px;
@@ -491,8 +489,8 @@ html {
     }
     
     .project-image {
-        max-width: 100px; /* Example fixed width, or use a percentage like 50% */
-        height: auto; /* Keeps the aspect ratio intact */
+        max-width: 100px; 
+        height: auto; 
     }
 
     .languages-box{
@@ -556,9 +554,7 @@ html {
         justify-content: center; 
         text-align: center;
     }
-    .home-text {
-        display: none;
-    }
+
     .title {
     
         font-size: calc(1rem + 2vw);  
@@ -571,7 +567,6 @@ html {
     .home-image{
         width: 170px; 
         max-height: 170px; 
-
     }
 
     body{
@@ -592,20 +587,18 @@ html {
         margin: 10px;
         top: 5px;
         justify-content: center;
-        gap: 20px;
-     
+        gap: 20px;   
     }
 
   
     .description-box, .languages-box, .experience-box {
-       height:200px;
-       width: 200px;
-    
+       height:300px;
+       width: 300px; 
     }
     
     .project-image {
-        max-width: 100px; /* Example fixed width, or use a percentage like 50% */
-        height: auto; /* Keeps the aspect ratio intact */
+        max-width: 100px;
+        height: auto;
     }
 
     .languages-box{
@@ -616,16 +609,14 @@ html {
         font-size: 0.5rem;  
     }
     .experience-box {
-        height:300px;
-        font-size: 0.4rem;
+        height:600px;
+        font-size: 0.9rem;
         padding: 20px;
+    
     }
 
-    .experience-box {
-        padding: 20px;
-    }
     .box-title{
-        font-size: 0.7rem;
+        font-size: 2rem;
     }
     
     #Projects {
@@ -633,32 +624,34 @@ html {
        
     }
 
+    #About  {
+        height: 150vh; 
+       
+    }
+
     .despcription{
-        font-size: 0.5rem;
-    
+        font-size: 0.8rem;
     }
     
     .project-title {
-        font-size: 0.6rem; /* Adjust the font size as needed */
+        font-size: 0.8rem; 
     }
     
     .project-description {
-        font-size: 0.4rem;
+        font-size: 0.8rem;
     }
-
     
     .linkP{
-        font-size: 0.5rem !important;
+        font-size: 0.8rem !important;
     }
 
     .linkP:hover{
-        font-size: 0.8rem !important;
+        font-size: 0.7rem !important;
        
     }
  
    
 }
-
 
 
 
