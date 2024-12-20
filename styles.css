@@ -68,7 +68,7 @@ body {
     position: absolute;
     top: 0%; /* Adjust the height */
     background: transparent; 
-    color: var(--second-color);
+    color: var(--font-color);
     font-family: "Nanum Gothic Coding", monospace; 
 }
 
@@ -177,6 +177,11 @@ a:visited {
     z-index: 10;
 }
   
+.project-video {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+  }
 
 
 .nav-bar li {
